@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.212);
+    height: 100vh;
+    width: 100%;
+
+    .container-style {
+        display: flex;
+        flex-direction: column;
+        background: white;
+        margin-top: 120px;
+        margin-left: 120px;
+        height: 100%;
+        margin-bottom: 120px;
+        margin-right: 120px;
+
+        .item {
+            padding-left: 32px;
+            padding-bottom: 16px;
+            padding-top: 16px;
+            display: flex;
+        }
+
+    
+    }
+
+}
+
+.btn{
+    background-color: gray;
+    width: 20%;
+    margin: auto;
+    color: white;
+    border-radius: 5%;
+    border: 1px solid black;
+    -webkit-box-shadow: -1px 11px 21px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 11px 21px -4px rgba(0,0,0,0.75);
+    box-shadow: -1px 11px 21px -4px rgba(0,0,0,0.75);
+    cursor: pointer;
+}

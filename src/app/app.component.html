@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="container-style">
+    <div class="item">
+      <div>
+        <span>Location</span>
+      </div>
+      <div>
+        <select class="form-select" aria-label="Default select example" (change)="selectChangeHandler($event)">
+          <option value="A">A</option>
+          <option value="B">B</option>
+        </select>
+      </div>
+    </div>
+    <div class="item">
+      <div>
+        <span>State</span>
+      </div>
+      <div class="selection">
+        <select class="form-select" aria-label="Default select example" (change)="selectChangeHandlerState($event)">
+          <option value="ambos lados">both sides</option>
+          <option value="un solo lado">one side only</option>
+          <option value="ningún lado">nowhere</option>
+        </select>
+      </div>
+    </div>
+    <button type="button" class="btn" (click)="process()">Start simulation</button>
+    <div class="item">
+      <div>
+        <span>Trash: </span>
+      </div>
+      <div>
+        <span>{{mensajeBasura}}</span>
+      </div>
+    </div>
+    <div class="item">
+      <div>
+        <span>Results: </span>
+      </div>
+      <div>
+        <span>{{mensajeResult}}</span>
+      </div>
+    </div>
+    <div class="container-image">
+      <div class="item">
+        <div>
+          <img src="{{aspiradoraUno ? 'assets/WhatsApp%20Image%202021-02-19%20at%209.png': 'assets/page.png'}}">
+        </div>
+        <div>
+          <img src="{{aspiradoraDos ? 'assets/WhatsApp%20Image%202021-02-19%20at%209.png': 'assets/page.png'}}">
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img src="{{basuraUno ? 'assets/volcar-monton-basura_7737-1629.png': 'assets/page.png'}}">
+        </div>
+        <div>
+          <img  src="{{basuraDos ? 'assets/volcar-monton-basura_7737-1629.png': 'assets/page.png'}}">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
